@@ -970,11 +970,11 @@ Transform:
   m_GameObject: {fileID: 894630887}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.049999952}
+  m_LocalPosition: {x: 0, y: 0.39195776, z: -0.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1327856126}
+  m_Father: {fileID: 1628401576}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &894630889
 MonoBehaviour:
@@ -988,7 +988,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0770476ffc41c134291ef417b852ed25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LensView
-  playerCamera: {fileID: 1990471918}
+  playerHead: {fileID: 1990471918}
+  lensRenderer: {fileID: 1327856124}
 --- !u!114 &894630890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1660,9 +1661,9 @@ Transform:
   m_Children: []
   m_Father: {fileID: 918194774}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
---- !u!4 &1327856126 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3242644416965603952, guid: 849ef981216b0cd4186587a7c585fff1, type: 3}
+--- !u!23 &1327856124 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6222084024160090013, guid: 849ef981216b0cd4186587a7c585fff1, type: 3}
   m_PrefabInstance: {fileID: 1628401569}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1486077477
@@ -2183,11 +2184,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 3242644416965603952, guid: 849ef981216b0cd4186587a7c585fff1, type: 3}
-      insertIndex: -1
+    - targetCorrespondingSourceObject: {fileID: 2869796502407761211, guid: 849ef981216b0cd4186587a7c585fff1, type: 3}
+      insertIndex: 0
       addedObject: {fileID: 894630888}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 849ef981216b0cd4186587a7c585fff1, type: 3}
+--- !u!4 &1628401576 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2869796502407761211, guid: 849ef981216b0cd4186587a7c585fff1, type: 3}
+  m_PrefabInstance: {fileID: 1628401569}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1674285809
 GameObject:
   m_ObjectHideFlags: 0
